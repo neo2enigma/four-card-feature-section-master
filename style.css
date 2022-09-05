@@ -238,9 +238,9 @@ article.card4 {
 
 
 /* Horizontal scroll */
-@media screen and (max-width:1400px) {
+/* @media screen and (max-width:1400px) {
     body {
         overflow-x: scroll;
     }
 
-}
+} */
