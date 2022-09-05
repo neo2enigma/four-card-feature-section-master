@@ -175,8 +175,26 @@ article.card4 {
 }
 
 
+@media screen and (min-width: 730px) {
+    main {
+        width: 700px;
+        margin-bottom: 80px;
+    }
+
+    .cards {
+        width: 600px;
+        height: 474px;
+        grid-template-columns: [line1] 1fr [line2] 1fr [line3];
+        grid-template-rows: [line1] 1fr [line2] 1fr [line3];
+        gap: 30px;
+        margin: auto;
+        justify-content: center;
+    }
+
+}
+
 /* Desktop render */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
     main {
         width: 1110px;
         margin-bottom: 80px;
@@ -235,6 +253,7 @@ article.card4 {
     }
 
 }
+
 
 
 /* Horizontal scroll */
