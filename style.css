@@ -150,7 +150,13 @@ article {
     height: 222px;
     background-position: bottom 28px right 28px;
     box-shadow: 0 4px 4px 0px hsla(229, 6%, 66%, 0.25),
-        0 15px 30px -11px hsla(229, 6%, 66%, .5)
+        0 15px 30px -11px hsla(229, 6%, 66%, .5);
+    transform: scale(1);
+    transition: transform .5s
+}
+
+article:hover {
+    transform: translate(0, -10px);
 }
 
 
