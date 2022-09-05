@@ -15,9 +15,10 @@ body {
     font-family: "Poppins";
     font-size: 13px;
     font-weight: 400;
-    color: hsla(234, 12%, 34%, .5);
+    color: hsla(232, 12%, 34%);
     line-height: 23px;
     overflow-x: hidden;
+    letter-spacing: .09px;
 }
 
 body {
@@ -109,8 +110,9 @@ h1 {
 
 .header div:first-child {
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 275;
     letter-spacing: .17px;
+    line-height: 36px;
 }
 
 .header h1 {
@@ -119,6 +121,7 @@ h1 {
     letter-spacing: .17px;
     color: hsla(234, 12%, 34%, 1);
     margin: 1px unset;
+    line-height: 36px;
 }
 
 .header div:last-child {
@@ -138,23 +141,18 @@ h1 {
 }
 
 article {
-
-    background-repeat: no-repeat;
-    background-size: 57px;
-    height: 222px;
-    background-position: bottom 28px right 28px;
-
-    box-shadow: 0 4px 4px 0px hsla(229, 6%, 66%, 0.25),
-        0 15px 30px -11px hsla(229, 6%, 66%, .5)
-}
-
-
-article {
     background-color: white;
     border-radius: 8px;
     border-top: 4px solid hsl(0, 0%, 98%);
     padding: 27px 0px 0px 29px;
+    background-repeat: no-repeat;
+    background-size: 57px;
+    height: 222px;
+    background-position: bottom 28px right 28px;
+    box-shadow: 0 4px 4px 0px hsla(229, 6%, 66%, 0.25),
+        0 15px 30px -11px hsla(229, 6%, 66%, .5)
 }
+
 
 article.card1 {
     border-top-color: hsl(180, 62%, 55%);
