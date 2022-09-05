@@ -155,25 +155,76 @@ article {
 
 
 article.card1 {
-    border-top-color: hsl(180, 62%, 55%);
+    position: relative;
     background-image: url('./images/icon-supervisor.svg');
 }
 
+article.card1::before {
+    position: absolute;
+    content: "";
+    background: hsl(180, 62%, 55%);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 article.card2 {
-    border-top-color: hsl(0, 78%, 62%);
+    position: relative;
     background-image: url('./images/icon-team-builder.svg');
 }
 
+article.card2::before {
+    position: absolute;
+    content: "";
+    background: hsl(0, 78%, 62%);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 article.card3 {
-    border-top-color: hsl(34, 97%, 64%);
+    position: relative;
     background-image: url('./images/icon-karma.svg');
 }
 
+article.card3::before {
+    position: absolute;
+    content: "";
+    background: hsl(34, 97%, 64%);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 article.card4 {
-    border-top-color: hsl(212, 86%, 64%);
+    position: relative;
     background-image: url('./images/icon-calculator.svg');
 }
 
+article.card4::before {
+    position: absolute;
+    content: "";
+    background: hsl(212, 86%, 64%);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 
 @media screen and (min-width: 730px) {
     main {
