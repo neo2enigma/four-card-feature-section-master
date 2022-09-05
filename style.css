@@ -1,0 +1,248 @@
+/* Reseting CSS elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Poppins";
+    font-size: 13px;
+    font-weight: 400;
+    color: hsla(234, 12%, 34%, .5);
+    line-height: 23px;
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(0, 0%, 98%);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsla(234, 12%, 34%, 1);
+}
+
+div {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: .09px;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Copyright */
+footer {
+    width: 100%;
+    margin: auto;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Styles */
+main {
+    width: 375px;
+    margin: auto;
+    margin-bottom: 78px;
+}
+
+main>section {
+    margin: auto;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.header {
+    margin: 85px 32px 76px;
+}
+
+.header div,
+h1 {
+    text-align: center;
+    padding: 0px 7px;
+}
+
+.header div:first-child {
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: .17px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: .17px;
+    color: hsla(234, 12%, 34%, 1);
+    margin: 1px unset;
+}
+
+.header div:last-child {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: .1px;
+    margin-top: 12px;
+}
+
+
+.cards {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: [line1] 1fr [line2];
+    grid-template-rows: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5];
+}
+
+article {
+
+    background-repeat: no-repeat;
+    background-size: 57px;
+    height: 222px;
+    background-position: bottom 28px right 28px;
+
+    box-shadow: 0 4px 4px 0px hsla(229, 6%, 66%, 0.25),
+        0 15px 30px -11px hsla(229, 6%, 66%, .5)
+}
+
+
+article {
+    background-color: white;
+    border-radius: 8px;
+    border-top: 4px solid hsl(0, 0%, 98%);
+    padding: 27px 0px 0px 29px;
+}
+
+article.card1 {
+    border-top-color: hsl(180, 62%, 55%);
+    background-image: url('./images/icon-supervisor.svg');
+}
+
+article.card2 {
+    border-top-color: hsl(0, 78%, 62%);
+    background-image: url('./images/icon-team-builder.svg');
+}
+
+article.card3 {
+    border-top-color: hsl(34, 97%, 64%);
+    background-image: url('./images/icon-karma.svg');
+}
+
+article.card4 {
+    border-top-color: hsl(212, 86%, 64%);
+    background-image: url('./images/icon-calculator.svg');
+}
+
+
+/* Desktop render */
+@media screen and (min-width: 800px) {
+    main {
+        width: 1110px;
+        margin-bottom: 80px;
+    }
+
+    footer {
+        width: 1110px;
+    }
+
+    .header {
+        margin: 80px 285px 64px;
+    }
+
+
+    .cards {
+        width: 1050px;
+        height: 500px;
+        grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4];
+        grid-template-rows: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5];
+        gap: 30px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    article {
+        width: 350px;
+        height: 250px;
+        padding: 32px 32px 0px 32px;
+        background-position: bottom 32px right 32px;
+    }
+
+    .header div:first-child,
+    h1 {
+        font-size: 36px;
+    }
+
+    .card1 {
+        grid-column: line1 / span line2;
+        grid-row: line2 / span line4;
+
+    }
+
+    .card2 {
+        grid-column: line2 / span line3;
+        grid-row: line1 / span line3
+    }
+
+    .card3 {
+        grid-column: line3 / span line4;
+        grid-row: line2 / span line4;
+    }
+
+    .card4 {
+        grid-column: line2 / span line3;
+        grid-row: line3 / span line5;
+    }
+
+}
+
+
+/* Horizontal scroll */
+@media screen and (max-width:1400px) {
+    body {
+        overflow-x: scroll;
+    }
+
+}
